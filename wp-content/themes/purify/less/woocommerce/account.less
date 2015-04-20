@@ -1,0 +1,83 @@
+.woocommerce-account {
+	main.main-single {
+		.woocommerce {
+			p {
+				padding:       0;
+				margin-bottom: 20px;
+				input {
+					height:      38px;
+					text-shadow: 0 0 0 !important;
+					box-shadow:  none !important;
+					padding:     0 15px;
+                    border: 1px solid @border-color !important;
+					&:focus {
+						text-shadow:  none !important;
+						box-shadow:   none !important;
+						border-color: @border-color !important;
+					}
+				}
+				input.button {
+					border-radius:  4px;
+					background:     @thim_body_primary_color;
+					color:          @white;
+					font-weight:    normal;
+					outline:        none;
+					padding:        0 20px;
+					text-transform: uppercase;
+					font-size:      @font-size-table-icon;
+                  &:hover {
+                    color: @white;
+                    background: @thim_body_second_color;
+                  }
+				}
+				input#rememberme {
+					margin-left:    10px;
+					margin-top:     0;
+					margin-right:   5px;
+					display:        inline-block;
+					vertical-align: middle;
+				}
+				a {
+					text-decoration: none;
+					color:           @thim_body_primary_color;
+				}
+			}
+			> h2 {
+				text-transform: uppercase;
+				font-size:      @thim_font_h2_font_size;
+			}
+			div.addresses {
+				header {
+					margin-bottom: 15px;
+					color:         @thim_font_body_color;
+					h3,
+					a.edit {
+						float:           none;
+						text-decoration: none;
+					}
+					h3 {
+						text-transform: uppercase;
+						font-size:      @thim_font_body_font_size;
+
+					}
+					a {
+						color: @thim_body_primary_color;
+					}
+				}
+			}
+			p.save_address {
+				position: relative;
+				display:  inline;
+				input {
+					padding: 15px 40px 15px 30px !important;
+				}
+				i {
+					position: absolute;
+					color:    @white;
+					top:      2px;
+					right:    25px;
+				}
+			}
+		}
+	}
+}

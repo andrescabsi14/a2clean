@@ -1,0 +1,223 @@
+
+#search-post, .widget_search {
+	margin-bottom: 30px;
+	form {
+		position: relative;
+		input {
+			height:        45px;
+			width:         100%;
+			border-radius: 6px;
+			text-shadow:   none;
+			box-shadow:    none;
+			border:        1px solid #ddd;
+			padding:       0 20px;
+			color:         @thim_font_body_color;
+		}
+		input::-webkit-input-placeholder {
+			color: @thim_font_body_color;
+		}
+		input:-moz-placeholder {
+			color: @thim_font_body_color;
+		}
+		input::-moz-placeholder {
+			color: @thim_font_body_color;
+		}
+		input:-ms-input-placeholder {
+			color: @thim_font_body_color;
+		}
+		button {
+			position:     absolute;
+			top:          12px;
+			right:        15px;
+			text-align:   center;
+			padding-left: 2px;
+			box-shadow:   none;
+			background:   transparent;
+			border:       none;
+			outline:      0;
+			i {
+				font-size:   20px;
+				font-style:  normal !important;
+				font-weight: normal !important;
+				color:       @thim_body_primary_color;
+				&:after {
+                  font-family: 'Pe-icon-7-stroke';
+                  content: "\e618";
+				}
+			}
+		}
+	}
+}
+
+.sidebar-right {
+	.widget-area {
+		padding-left: 65px;
+	}
+}
+
+.sidebar-left {
+	.widget-area {
+		padding-right: 65px;
+	}
+}
+
+.widget-area {
+	aside {
+		margin-bottom: 30px;
+		background:    @white;
+		border:        1px solid @border-color;
+		border-radius: 6px;
+		&:last-child {
+			margin-bottom: 0 !important;
+		}
+		&.thim_search_widget {
+			border: 0;
+          color: @thim_font_body_color;
+          letter-spacing:0.5px;
+		}
+		&.widget_tag_cloud {
+			.tagcloud {
+				padding: 20px 20px 40px;
+			}
+			a {
+				background:      none repeat scroll 0 0 #ccc;
+				border-radius:   6px;
+				color:           @white;
+				font-size:       @thim_font_body_font_size !important;
+				margin-bottom:   5px;
+				margin-right:    5px;
+				padding:         10px 20px;
+                letter-spacing:0.5px;
+				text-decoration: none;
+				display:         inline-block;
+				*display:        inline;
+				zoom:            1;
+				&:hover {
+					background: none repeat scroll 0 0 @thim_body_primary_color;
+					color:      @white;
+				}
+			}
+		}
+		ul {
+			list-style:     none;
+			padding-left:   30px;
+			padding-right:  30px;
+			padding-bottom: 3px;
+			li {
+				margin-bottom: 20px;
+				a {
+					color:           @thim_font_body_color !important;
+					font-size:       @thim_font_body_font_size;
+                    letter-spacing: 0.5px;
+					text-decoration: none;
+					&:hover {
+						color: @thim_body_primary_color !important;
+					}
+				}
+			}
+		}
+	}
+	.box-heading {
+		color:          @thim_body_primary_color;
+		font-size:      16px;
+		font-weight:    600 !important;
+		letter-spacing: 1px;
+		padding:        26px 30px 10px;
+		margin-top:     0px;
+		text-transform: uppercase;
+		&:before {
+			content:      "\f02e";
+			font-family:  FontAwesome;
+			font-size:    20px;
+			margin-right: 10px;
+		}
+	}
+
+	.widget_search {
+		.box-heading {
+			padding: 0px 0px 10px 0px;
+		}
+		form {
+			overflow: hidden;
+		}
+		padding: 25px;
+		.screen-reader-text {
+			display: none;
+		}
+		label {
+			display: block;
+			input {
+				width: 100%;
+			}
+		}
+		input {
+			border:  1px solid #dddddd;
+			padding: 6px 10px;
+		}
+		input[type="submit"] {
+			font-size:       12px;
+			color:           #ffffff;
+			background:      @thim_body_primary_color;
+			text-transform:  uppercase;
+			text-decoration: none;
+			position:        relative;
+			display:         block;
+			margin:          10px auto 0;
+			border-radius:   6px;
+			padding:         6px 15px;
+			float:           right
+		}
+	}
+	.widget_text {
+		.textwidget {
+			padding: 10px 20px;
+		}
+		select {
+			width: 100%;
+		}
+	}
+	.sub-menu, aside ul.children {
+		padding-left: 0;
+		margin-left:  20px;
+		li {
+			margin-bottom: 0px;
+			a {
+				padding: 3px 0px;
+			}
+		}
+	}
+	.archive-dropdown, .widget_categories select {
+		margin: 0 20px 20px;
+	}
+	#calendar_wrap {
+		padding: 0 20px;
+	}
+	.widget_rss {
+		ul {
+			margin-top:    10px;
+			padding-right: 15px;
+		}
+		li {
+			margin-bottom: 10px;
+			a.rsswidget {
+				display:     block;
+				font-weight: bold;
+				&:hover {
+					color: @thim_body_primary_color !important;
+				}
+			}
+			.rss-date {
+				font-style:    italic;
+				margin-bottom: 5px;
+				font-size:     12px;
+				display:       inline-block;
+			}
+		}
+	}
+	.widget_archive {
+		select {
+			margin-left:   20px;
+			margin-bottom: 20px;
+		}
+	}
+}

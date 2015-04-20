@@ -1,0 +1,53 @@
+.counter-box {
+	text-align: center;
+	.icon-counter-box {
+		margin-bottom: 23px;
+		span {
+			height:        88px;
+			width:         88px;
+			line-height:   88px;
+			border-radius: 100%;
+			text-align:    center;
+			color:         @white;
+			background:    @thim_body_primary_color;
+//			&:before {
+//				font-size: 30px;
+//			}
+		}
+	}
+	.content-box-percentage {
+		span.display-percentage {
+			margin-bottom: 0;
+			font-size:     80px;
+			font-weight:   100;
+			line-height:   75px;
+			display:       block;
+			clear:         both;
+		}
+		sub.counter-box-content {
+			font-weight:    600;
+			text-transform: uppercase;
+			color:          @text-title;
+			font-size:      14px !important;
+			line-height: 1;
+		}
+	}
+}
+
+.no-margin {
+	.counter-box {
+		.icon-counter-box {
+			margin-bottom: 0;
+			i{
+				&:before {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+	.content-box-percentage {
+		span.display-percentage {
+			margin-bottom: 5px;
+		}
+	}
+}

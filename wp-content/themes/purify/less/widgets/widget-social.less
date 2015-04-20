@@ -1,0 +1,93 @@
+/*--------------------------------------------
+Social newsletter
+//----------------------------------------------*/
+
+.thim-social {
+	ul {
+		margin:  0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+	}
+	a:before {
+		font-family: 'kuler';
+		width:       25px;
+		height:      25px;
+		line-height: 25px;
+		text-align:  center;
+		display:     inline-block;
+		font-size:   12px;
+		margin:      0 0 0 10px;
+		overflow:    visible;
+		border:      1px solid transparent;
+        color:       @thim_font_body_color;
+		background:  @thim_body_primary_color;
+	}
+	a:hover:before {
+ 		background: @white;
+ 	}
+	.facebook:before {
+		font-family: FontAwesome;
+		content:     "\f09a";
+	}
+	.twitter:before {
+		content: '\e608';
+	}
+	.google_plus:before {
+		content: '\e600';
+	}
+	.youtube:before {
+		content: '\e613';
+	}
+	.rss:before {
+		content: '\e60b';
+	}
+	.pinterest:before {
+		content: '\e61e';
+	}
+	.instagram:before {
+		content: '\e625';
+	}
+	.linkedin:before {
+		font-family: FontAwesome;
+		content:     "\f0e1";
+	}
+	.icon-style-icon {
+		li a:before {
+			background: none;
+		}
+	}
+	.icon-style-square {
+		border-radius: 0;
+	}
+	.icon-style-circle {
+		li a:before {
+			border-radius: 100%;
+		}
+	}
+	.icon-size-24px {
+		li a:before {
+			width:       25px;
+			height:      25px;
+			line-height: 24px;
+			font-size:   12px;
+            vertical-align: middle;
+		}
+	}
+	.icon-size-32px {
+		li a:before {
+			width:       36px;
+			height:      36px;
+			line-height: 35px;
+		}
+	}
+	.icon-size-48px {
+		li a:before {
+			width:       48px;
+			height:      48px;
+			line-height: 47px;
+			font-size:   22px;
+		}
+	}
+}

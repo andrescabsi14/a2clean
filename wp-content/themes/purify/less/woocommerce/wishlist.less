@@ -1,0 +1,130 @@
+
+.woocommerce-wishlist {
+	main.main-single {
+		form#yith-wcwl-form {
+			.woocommerce-message {
+
+			}
+			.wishlist-title {
+				display: none;
+			}
+			table.wishlist_table {
+				border-radius:  0;
+				border-left:    none;
+				border-right:   none;
+				border-top:     1px;
+				color:          @text-title;
+				letter-spacing: 1px;
+				font-size:      @font-size-table-icon;
+
+				a {
+					text-decoration: none;
+					letter-spacing:  1px;
+					color:           @text-title;
+					text-transform:  uppercase;
+					font-weight:     600;
+					&:hover {
+						color: @thim_body_primary_color;
+					}
+				}
+				span {
+					font-weight: 600;
+				}
+				thead {
+					text-transform: uppercase;
+					th {
+						border-right: none;
+					}
+				}
+				tbody {
+					td {
+						border-top:   none;
+						border-right: none;
+					}
+					.product-remove {
+						width:        10%;
+						padding-left: 40px;
+						a.remove {
+							color:      #AAAAAA !important;
+							font-size:  20px !important;
+							background: none;
+							&:hover {
+								color: @thim_body_primary_color;
+							}
+						}
+					}
+					.product-add-to-cart {
+						width:     15%;
+						font-size: @font-size-table-icon;
+						.cart {
+							a {
+								background:     @thim_body_primary_color;
+								color:          @white;
+								text-transform: uppercase;
+								outline:        none;
+								border-radius:  6px;
+								font-weight:    normal;
+								height:         50px;
+								text-align:     center;
+								line-height:    38px;
+								&:hover {
+									background: @thim_body_second_color;
+								}
+								&:after {
+									font-family: FontAwesome;
+									content:     "\f105";
+									margin-left: 10px;
+									font-size:   14px;
+								}
+							}
+						}
+						.wishlist,
+						.quick-view,
+						.box-compare {
+							display: none !important;
+						}
+					}
+					.product-stock-status {
+						width:      15%;
+						text-align: left;
+						span {
+							color: @text-title;
+						}
+					}
+					.product-thumbnail {
+						width: 10%;
+					}
+					.product-price {
+						text-align: left;
+						width:      15%;
+					}
+				}
+				tfoot {
+					td {
+						border: none;
+						.yith-wcwl-share {
+							.yith-wcwl-share-title {
+								display:        inline;
+								float:          left;
+								margin-right:   15px;
+								font-weight:    normal;
+								text-transform: none;
+							}
+							ul {
+								display:    inline;
+								float:      left;
+								margin-top: 13px;
+								li {
+									margin-right: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		footer {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+[START=WIDGET LOGIC OPTIONS]
+nav_menu-5	""
+nav_menu-6	""
+thim_search_widget-5	"is_page(array(398,405))"
+thim_search_widget-6	"!is_page(array(403,407))"
+social-3	""
+social-2	""
+thim_search_widget-4	"is_page(array(403,407))"
+text-6	""
+heading-2	""
+[STOP=WIDGET LOGIC OPTIONS]

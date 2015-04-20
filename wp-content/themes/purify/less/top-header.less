@@ -1,0 +1,108 @@
+#masthead {
+	.top-header {
+		padding-left:  15px;
+		padding-right: 15px;
+        padding-right: 30px\0 !important;
+		background:    @thim_bg_top_color !important;
+		color:         @thim_top_header_text_color;
+		.container,
+		.container-top-head {
+			height:      50px;
+			line-height: 50px;
+			.meta-tophead {
+				float: left;
+				span {
+                  font-size: @thim_font_size_top_header;
+                  padding: 0 !important;
+					a {
+						color:           @thim_top_header_text_color;
+						font-size:       @thim_font_size_top_header;
+						text-decoration: none;
+						&:hover {
+							color: @thim_top_header_link_color;
+						}
+					}
+                  i:before {
+                    font-family: 'Pe-icon-7-stroke';
+                    font-size:      14px !important;
+                    width:          25px;
+                    height:         25px;
+                    line-height:    26px;
+                    text-align:     center;
+                    font-style:     normal;
+                    display:        inline-block;
+                    color:          @thim_font_body_color;
+                    background:     @thim_body_primary_color;
+                    vertical-align: middle;
+                    .rounded(100%);
+                  }
+                  .skype:before {
+                    content: '\e626';
+                  }
+                  .email:before {
+                    content: "\e639";
+                  }
+                  .mobile:before {
+                    content: "\e627";
+                  }
+                  .fax:before {
+                    content: "\f1ac";
+                  }
+                  .marker:before {
+                    content: "\e638";
+                  }
+				}
+			}
+			.thim_search_widget {
+				width:        285px;
+				float:        right;
+				margin-right: 28px;
+			}
+			.widget_social {
+				.thim-social {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+@media (width: 1920px) {
+  .top-header {
+    .meta-tophead {
+      span {
+        margin-right: 15px;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+#masthead.header_v1 {
+	.top-header {
+		.container-top-head {
+			.widget_social {
+				.thim-social {
+					float: right !important;
+				}
+			}
+		}
+	}
+}
+@media @lg {
+	#masthead {
+		.top-header {
+			.topbar-address {
+				padding-left: 0 !important;
+			}
+			.topbar-phone {
+				padding-left: 10px;
+			}
+			.topbar-email {
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+

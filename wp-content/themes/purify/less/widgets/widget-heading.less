@@ -1,0 +1,38 @@
+.widget-heading {
+	text-align: center;
+	> span {
+		text-transform: uppercase;
+		margin-bottom:  40px;
+		color:          @text-title;
+		font-weight:    600;
+		font-size:      14px !important;
+	}
+	.heading-title {
+		position:       relative;
+		padding-bottom: 30px;
+		color:          @thim_body_primary_color;
+		text-transform: uppercase;
+		font-weight:    normal;
+		&:after {
+			position:    absolute;
+			content:     "";
+			height:      4px;
+			width:       30px;
+			bottom:      0;
+			left:        50%;
+			margin-left: -15px;
+		}
+	}
+	&.text-left{
+		width: 50%;
+		float: left;
+	}
+	&.text-right{
+		width: 50%;
+		float: right;
+	}
+	&.text-center{
+		width: 100%;
+		float: none;
+	}
+}

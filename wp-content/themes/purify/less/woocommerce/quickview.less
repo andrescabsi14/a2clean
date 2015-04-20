@@ -1,0 +1,179 @@
+.mfp-iframe-scaler #content {
+	background: @white;
+	height:     100% !important;
+    font-family: @thim_font_body_font_family !important;
+	.product-info {
+		margin:         0;
+		padding-top:    20px;
+		padding-bottom: 10px;
+		.left {
+			#slider.flexslider {
+				margin-bottom: 20px;
+				ul.flex-direction-nav {
+					display: none;
+					margin:  0;
+					li {
+						list-style: none;
+					}
+				}
+			}
+
+			#carousel.flexslider ul {
+				margin-top: 30px;
+				text-align: center;
+				display:    block !important;
+				width:      auto !important;
+				li {
+					list-style:   none;
+					cursor:       pointer;
+					display:      inline-block !important;
+					width:        auto !important;
+					margin-right: 10px;
+					float:        none !important;
+				}
+			}
+		}
+		.right {
+			span.onsale {
+				position:      relative;
+				top:           0;
+				left:          0;
+				right:         0;
+				display:       inline-block;
+				padding:       0px;
+				box-shadow:    0 0 0 !important;
+				margin-bottom: 10px;
+				background:    @thim_body_primary_color;
+			}
+			.product_title {
+				margin-top:     10px;
+				margin-bottom:  10px !important;
+				font-size:      @thim_font_body_font_size;
+				text-transform: uppercase;
+			}
+			.woocommerce-product-rating {
+				font-size:     @font-size-table-icon !important;
+				margin-bottom: 15px;
+				.star-rating {
+					color: @thim_body_primary_color;
+					&:before {
+						color: @thim_body_primary_color;
+					}
+				}
+			}
+			.price {
+				font-size: 18px;
+				color:     @thim_body_primary_color !important;
+				ins {
+					text-decoration: none;
+				}
+				del {
+					span {
+						font-size: 14px;
+					}
+				}
+			}
+			.description {
+				p {
+					letter-spacing: 0.5px;
+					margin-bottom:  15px;
+                    color: @thim_font_body_color;
+				}
+			}
+			.product_meta {
+              letter-spacing: 0.5px;
+              color: @thim_font_body_color !important;
+				> span {
+					display:       block;
+					margin-bottom: 5px;
+				}
+				a {
+					text-decoration: none;
+                    letter-spacing: 0.5px;
+                    color:@thim_font_body_color !important;
+					&:hover {
+						color: @thim_body_primary_color;
+					}
+				}
+				margin-bottom: 15px;
+			}
+			.cart {
+				a.button {
+					padding:         15px 20px;
+					font-weight:     normal;
+					background:      @thim_body_primary_color;
+					color:           @white;
+					text-transform:  uppercase;
+					margin-right:    10px;
+					font-size:       @font-size-table-icon;
+					text-decoration: none;
+					border-radius:   6px;
+					&:hover {
+						background: @thim_body_second_color !important;
+					}
+					&:after {
+						font-family: FontAwesome;
+						content:     "\f105";
+						margin-left: 10px;
+						font-size:   @thim_font_body_font_size;
+					}
+				}
+				a.added_to_cart {
+					position:        relative;
+					padding:         11px 32px 11px 20px;
+					font-weight:     normal;
+					background:      @thim_body_primary_color;
+					color:           @white;
+					text-transform:  uppercase;
+					margin-right:    10px;
+					font-size:       @font-size-table-icon;
+					text-decoration: none;
+					border-radius:   6px;
+					&:hover {
+						background: @thim_body_second_color !important;
+					}
+					&:after {
+						position:    absolute;
+						font-family: FontAwesome;
+						content:     "\f105";
+						margin-left: 10px;
+						font-size:   @thim_font_body_font_size;
+					}
+				}
+				.added {
+					display: none !important;
+				}
+			}
+			.woo-share {
+				margin-top: 20px;
+				span {
+					float:          left;
+					text-transform: uppercase;
+					margin-right:   20px;
+                    letter-spacing: 0.5px;
+                    color: @thim_font_body_color !important;
+				}
+				ul {
+					padding: 0;
+					li {
+						list-style:   none;
+						display:      inline-block;
+						margin-right: 10px;
+						border:       none !important;
+						a {
+							text-align:      center;
+							line-height:     16px;
+							display:         inline-block;
+							text-decoration: none;
+							color:           @thim_font_body_color;
+							&:hover {
+								color: @thim_body_primary_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

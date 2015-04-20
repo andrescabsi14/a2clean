@@ -1,0 +1,115 @@
+
+.sbHolder {
+	background-color: @white;
+	border:           solid 1px @border-color;
+	font-family:      @thim_font_body_font_family !important;
+	font-size:        @thim_font_body_font_size;
+	font-weight:      normal;
+	height:           40px;
+	position:         relative;
+    outline-color: #DDDDDD !important;
+}
+
+.sbSelector {
+	display:        block;
+	height:         40px;
+	left:           5px;
+	line-height:    40px;
+	outline:        none;
+	overflow:       hidden;
+	position:       absolute;
+	text-indent:    10px;
+	font-size:      13px;
+	top:            0;
+	width:          170px;
+	color:        @thim_font_body_color !important;
+	font-family:    @thim_font_body_font_family !important;
+    letter-spacing: 0.5px;
+}
+
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+	color:           @thim_font_body_color;
+	outline:         none;
+	text-decoration: none;
+}
+
+a.sbToggle {
+	&:after {
+		font-family: FontAwesome;
+		content:     "\f107";
+		color:       @thim_body_primary_color;
+		position:    absolute;
+		right:       15px;
+		top:         9px;
+		font-size:   16px;
+	}
+}
+
+.sbHolderDisabled {
+	background-color: #3C3C3C;
+	border:           solid 1px #515151;
+}
+
+.sbHolderDisabled .sbHolder {
+
+}
+
+.sbHolderDisabled .sbToggle {
+
+}
+
+.sbOptions {
+	background-color: #fff;
+	border:           solid 1px #ddd;
+	list-style:       none;
+	margin:           0;
+	padding:          0;
+	position:         absolute;
+	top:              30px;
+	left:             0;
+	width:            100%;
+	z-index:          1;
+	overflow-y:       auto;
+    outline-color: #ddd !important;
+}
+
+.sbOptions li {
+	padding: 0 7px;
+}
+
+.sbOptions a {
+	border-bottom: dotted 1px #a9a9a9;
+	display:       block;
+	outline:       none;
+	padding:       7px 0 7px 3px;
+    color:   @thim_font_body_color !important;
+    letter-spacing: 0.5px;
+}
+
+.sbOptions a:link, .sbOptions a:visited {
+    color:    @thim_font_body_color !important;
+	text-decoration: none;
+}
+
+.sbOptions li.last a {
+	border-bottom: none;
+}
+
+.sbOptions .sbDisabled {
+	border-bottom: dotted 1px #a9a9a9;
+	color:         #333;
+	display:       block;
+	padding:       7px 0 7px 3px;
+}
+
+.sbOptions .sbGroup {
+	border-bottom: dotted 1px #a9a9a9;
+	color:         @thim_body_primary_color;
+	display:       block;
+	font-weight:   bold;
+	padding:       7px 0 7px 3px;
+}
+
+.sbOptions .sbSub {
+	padding-left: 17px;
+}
